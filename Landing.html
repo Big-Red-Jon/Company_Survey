@@ -1,0 +1,59 @@
+
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<body>
+  <!DOCTYPE html>
+  <h1 id="title"> All About You Survey</h1>
+  <p id="description"> We want to get to know you!</p>
+<div id="survey-effect">
+<form id="survey-form"> 
+  
+  <div id="name-container">
+  <label for="name" id="name-label">First Name:</label>
+  <input type="text" id="name" name="name" class="container" placeholder="Enter Name Here" required><br>
+  </div>
+
+  <div id="email-container">
+  <label for="email" id="email-label">Email Address:</label><br>
+ <input type="email" id="email" name="email" class="container"  placeholder="Enter Email Here" required><br>
+  </div>
+
+  <label for="number" id="number-label"> Age: </label><br>
+  <input type="number" id="number"  class="container" placeholder="Enter Age Here" min="15" max ="100"><br>
+
+  <label for="dropdown">Please Select Your Favorite Series</label><br>
+  <select id="dropdown" class="select">
+    <option value="Star War">Star Wars</option>
+    <option value="Star Trek">Star Trek</option>
+    <option value="LOTR">Lord of the Rings</option>
+  </select><br>
+  <div id="agent-question"
+  <label for="radio">Do you have a real estate agent?</label><br>
+  <input type="radio" id="red" name="color" value="red">
+  <label for="red">Yes</label><br>
+  <input type="radio" id="blue" name="color" value="blue">
+  <label for="blue">No</label><br>
+  </div>
+  
+  <p>How often do you search for homes?</p>
+  <input type="checkbox" id="frequency 1" value="daily">
+  <label for="frequency 1">Daily</label>
+  <input type="checkbox" id="frequency 2" value="weekly">
+  <label for="frequence 2">Weekly</label>
+  <input type="checkbox" id="frequency 3" value="monthly">
+  <label for="frequency 3">Monthly</label><br>
+  <br>
+  <textarea id="comments" name="comment" placeholder="Leave Additional Comments...">
+  </textarea>
+  <br>
+  <input type="submit" placeholder="Submit" id="submit"><br>
+  </form>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
